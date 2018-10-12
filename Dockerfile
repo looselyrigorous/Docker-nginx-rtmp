@@ -53,11 +53,8 @@ RUN	cd /tmp										&&	\
 	make										&&	\
 	make install
 
-FROM alpine:latest as ffmpeg_builder
+FROM base as ffmpeg_builder
 RUN     apk  add --no-cache --update libgcc libstdc++ ca-certificates libcrypto1.0 libssl1.0 libgomp expat
-
-
-FROM        base AS build
 
 WORKDIR     /tmp/workdir
 
