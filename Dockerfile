@@ -410,6 +410,7 @@ ADD run.sh /
 
 EXPOSE 1935
 EXPOSE 8080
+EXPOSE 8443
 
 CMD /run.sh
 
